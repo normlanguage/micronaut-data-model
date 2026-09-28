@@ -1,4 +1,4 @@
-package micronaut.data.model
+package binding
 
 import micronaut.data.model.annotation.MappedEntity
 import micronaut.data.model.pageableFrom
@@ -8,10 +8,9 @@ class Message {
 }
 
 Void main() {
-  if Message.class.annotation<MappedEntity>() != null {
-    printLine("mapped entity")
-  }
+  require(condition: Message.class.annotation<MappedEntity>() != null, message: "MappedEntity binding is missing")
   var pageable = pageableFrom(arg0: 2, arg1: 25)
+  require(condition: pageable?.getNumber() == 2 && pageable?.getSize() == 25, message: "Pageable binding changed")
   printLine(pageable?.getNumber() ?? 0)
   printLine(pageable?.getSize() ?? 0)
 }

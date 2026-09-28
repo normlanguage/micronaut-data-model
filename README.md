@@ -2,6 +2,6 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-`micronaut.data.model@2` binds entity annotations, SQL dialects, and common synchronous repository APIs from Micronaut Data 5.1.3. A runnable example is in `micronaut/data/model/Main.norm`.
+The [module](micronaut/data/model/module.norm) binds entity annotations, SQL dialects, and synchronous repository APIs. The independent [binding example](examples/binding/Main.norm) checks entity and paging declarations.
 
 [Sample ownership](samples/README.md).

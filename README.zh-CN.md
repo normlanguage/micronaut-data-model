@@ -2,6 +2,6 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-`micronaut.data.model@2` 绑定 Micronaut Data 5.1.3 的实体 Annotation、SQL Dialect 与常用同步 Repository API。可运行示例位于 `micronaut/data/model/Main.norm`。
+[模块声明](micronaut/data/model/module.norm)绑定实体 Annotation、SQL Dialect 与同步 Repository API；独立的[绑定示例](examples/binding/Main.norm)验证实体与分页声明。
 
 [示例归属](samples/README.zh-CN.md)。
