@@ -1,6 +1,6 @@
 package binding
 
-import micronaut.data.model.annotation.MappedEntity
+import micronaut.data.model.MappedEntity
 import micronaut.data.model.pageableFrom
 
 @MappedEntity(value: "messages")
