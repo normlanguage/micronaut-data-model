@@ -2,7 +2,7 @@ Module module() {
   return module(
     name: "micronaut.data.model",
     version: 3,
-    exports: ["MappedEntity", "Id", "GeneratedValue", "Type", "DateCreated", "DateUpdated", "CrudRepository", "PageableRepository", "Pageable", "Page", "Dialect"],
+    exports: ["MappedEntity", "Id", "GeneratedValue", "DateCreated", "DateUpdated", "Pageable", "Page"],
     binding: jarBinding(
       target: mavenJar(
         group: "io.micronaut.data",
